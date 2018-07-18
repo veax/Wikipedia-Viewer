@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700')
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+.clearfix::after 
+  content: ""
+  clear: both
+  display: table
+html 
+  font-size: 16px
+  font-family: 'Lato', sans-serif
+a 
+  text-decoration: none
+  background: #00a7b0
+  color: #fff
+  &:hover 
+    background: darken(#00a7b0, 10%)
+body 
+  background: url(bg.jpg) no-repeat center center
+  background-size: cover
+  background-attachment: fixed
+
+.container 
+  width: 80%
+  margin: 0 auto
+  text-align: center  
+
+header 
+  padding-top: 2rem
+  padding-bottom: 2rem
+  min-height: 250px
+  h2 
+    font-size: 2rem
+    color: #fff
+  img 
+    width: 20%
+
+main 
+  padding: 4rem 0
+  .input_box
+    position: relative
+    width: 50%
+    margin: 0 auto 
+    input[type="search"]
+      font-size: 1.25rem
+      background: #f6f6f6
+      width: 100%
+      text-align: center
+      border-radius: 5px
+      padding: 1rem 2rem 1rem 1.5rem
+      border-style: none
+      &:focus, &:hover
+        cursor: pointer
+        outline: none
+        color: #444
+        &::-webkit-input-placeholder
+          opacity: .8
+        &::-webkit-search-cancel-button
+          opacity: 0  
+    
+    .fa-search
+      position: absolute
+      top: 1.25rem
+      right: 1.5rem
+      color: #444
+  
+    a.random_link
+      display: inline-block
+      float: right
+      margin-top: 2rem
+      margin-right: 0
+      padding: .7rem 1rem
+      border-radius: 2px
+      font-size: 1rem
+      
+    ul#articles 
+      li.article_card 
+        list-style-type: none
+        a 
+          display: block
+          width: 100% 
+          padding: 1rem 2rem
+          margin: .3rem 0
+          border-radius: 5px
+          text-align: left
+          h3 
+            margin-bottom: 1rem
+            font-size: 1.1rem
+@media (max-width: 670px)
+  main .input_box
+    width: 80%
+    input[type="search"] 
+      font-size: 1rem
+    i 
+      font-size: 0.8rem
+
+
+

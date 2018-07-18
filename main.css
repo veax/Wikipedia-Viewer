@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  background: #00a7b0;
+  color: #fff;
+}
+
+a:hover {
+  background: #00777d;
+}
+
+body {
+  background: url(bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 250px;
+}
+
+header h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header img {
+  width: 20%;
+}
+
+main {
+  padding: 4rem 0;
+}
+
+main .input_box {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+main .input_box input[type="search"] {
+  font-size: 1.25rem;
+  background: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem 2rem 1rem 1.5rem;
+  border-style: none;
+}
+
+main .input_box input[type="search"]:focus, main .input_box input[type="search"]:hover {
+  cursor: pointer;
+  outline: none;
+  color: #444;
+}
+
+main .input_box input[type="search"]:focus::-webkit-input-placeholder, main .input_box input[type="search"]:hover::-webkit-input-placeholder {
+  opacity: .8;
+}
+
+main .input_box input[type="search"]:focus::-webkit-search-cancel-button, main .input_box input[type="search"]:hover::-webkit-search-cancel-button {
+  opacity: 0;
+}
+
+main .input_box .fa-search {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  color: #444;
+}
+
+main .input_box a.random_link {
+  display: inline-block;
+  float: right;
+  margin-top: 2rem;
+  margin-right: 0;
+  padding: .7rem 1rem;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+main .input_box ul#articles li.article_card {
+  list-style-type: none;
+}
+
+main .input_box ul#articles li.article_card a {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: .3rem 0;
+  border-radius: 5px;
+  text-align: left;
+}
+
+main .input_box ul#articles li.article_card a h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 670px) {
+  main .input_box {
+    width: 80%;
+  }
+  main .input_box input[type="search"] {
+    font-size: 1rem;
+  }
+  main .input_box i {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
