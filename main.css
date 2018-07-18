@@ -28,9 +28,10 @@ a:hover {
 }
 
 body {
-  background: url(bg.jpg) no-repeat center center;
+  background: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd1c3895999a4f9c5e4ac57e6e9fa2fb&auto=format&fit=crop&w=1080&q=100) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  min-width: 350px;
 }
 
 .container {
@@ -42,7 +43,6 @@ body {
 header {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  min-height: 250px;
 }
 
 header h2 {
@@ -52,6 +52,7 @@ header h2 {
 
 header img {
   width: 20%;
+  min-width: 70px;
 }
 
 main {
@@ -96,7 +97,7 @@ main .input_box .fa-search {
 }
 
 main .input_box a.random_link {
-  display: inline-block;
+  display: block;
   float: right;
   margin-top: 2rem;
   margin-right: 0;
